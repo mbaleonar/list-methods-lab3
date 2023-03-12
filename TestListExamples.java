@@ -3,6 +3,9 @@ import org.junit.*;
 import java.util.Arrays;
 import java.util.List;
 
+interface StringChecker {
+  boolean checkString (String s);
+}
 class IsMoon implements StringChecker {
   public boolean checkString(String s) {
     return s.equalsIgnoreCase("moon");
